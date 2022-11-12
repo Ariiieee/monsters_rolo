@@ -1,6 +1,7 @@
 import "./App.css";
 import {Component} from "react";
 import CardList from "./components/card-list/CardList";
+import SearchBox from "./components/search-box/SearchBox";
 
 class App extends Component {
 	constructor() {
@@ -47,14 +48,12 @@ class App extends Component {
 
 		return (
 			<div className="App">
-				<input
-					type="search-box"
+				<SearchBox
+					className="monster_search__box"
+					type="search"
 					placeholder="search monsters"
-					onChange={onSearchChange}
+					onChangeHandler={onSearchChange}
 				/>
-				{/* {filteredMonsters.map((monster) => {
-					return <h1 key={monster.id}>{monster.name}</h1>;
-				})} */}
 				<CardList monsters={filteredMonsters} />
 			</div>
 		);
@@ -63,7 +62,7 @@ class App extends Component {
 
 export default App;
 
-//anonymouse function is a function that is not stored anywhere in a variable
+//anonymous function is a function that is not stored anywhere in a variable
 //creating methods in renders are for optimization
 // a component governs a piece of the ui - ties together visual representation and functional representation of the ui
 
