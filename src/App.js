@@ -48,6 +48,7 @@ class App extends Component {
 
 		return (
 			<div className="App">
+				<h1 className="app__title">Cat Rolodex</h1>
 				<SearchBox
 					className="monster_search__box"
 					type="search"

@@ -14,4 +14,12 @@ body {
 	text-align: center;
 }
 
+.app__title {
+	margin: 75px 0 20px 0;
+	color: #07ccde;
+	font-size: 72px;
+	font-weight: 500;
+	font-family: "Abril Fatface", cursive;
+}
+
 /*TODO: change the app colors and background color to something of yours */
